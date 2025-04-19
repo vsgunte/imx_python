@@ -1,0 +1,40 @@
+{
+  "audio_system": {
+    "channels": [
+      {
+        "channel_id": "local_1",
+        "type": "local",
+        "parameters": {
+          "volume": 0.8,
+          "frequency": 440.0,
+          "active": false
+        }
+      },
+      {
+        "channel_id": "remote_1",
+        "type": "remote",
+        "parameters": {
+          "volume": 0.6,
+          "frequency": 880.0,
+          "active": false
+        }
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Test Track",
+        "duration": 180,
+        "audio_data": "path/to/audio.wav",
+        "metadata": {
+          "artist": "Example Artist",
+          "genre": "Test"
+        }
+      }
+    ]
+  },
+  "network": {
+    "socket_host": "localhost",
+    "socket_port": 5000,
+    "rest_base_url": "http://localhost:8080"
+  }
+}
